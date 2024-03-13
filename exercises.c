@@ -28,9 +28,9 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size)
 {
-  for (int i = size; i >= 0; i--)
+  for (int i = 0; i < size; i++)
   {
-    for (int a = 0; a < size; a++)
+    for (int a = size -1; a < i; a--)
     {
       arr[a] = arr[i];
     }
@@ -43,7 +43,7 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arr[], int size, int *newSize) 
 {
   for (int i = 0; i < size; i++);
   {
@@ -52,6 +52,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
       newSize++;
     }
   }
+  return NULL;
 }
 
 /*
