@@ -486,3 +486,17 @@ exercises.c:49:7: error: variable ‘newArre’ set but not used [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 c665159
+Thu 14 Mar 2024 05:32:00 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:54:7: error: value computed is not used [-Werror=unused-value]
+   54 |       *newSize++;
+      |       ^~~~~~~~~~
+exercises.c:55:32: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   55 |       return newArre[*newSize] = arr[i];
+      |              ~~~~~~~~~~~~~~~~~~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e3b8813
