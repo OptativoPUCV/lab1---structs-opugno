@@ -29,7 +29,7 @@ invierta el orden de sus elementos.
 void reverseArray(int arr[], int size)
 {
   int resta = 1;
-  for (int i = 0; i < size / 2; i++)
+  for (int i = 0; i < size; i++)
   {
     arr[i] = arr[size - resta];
     arr[size - resta] = arr[i];
@@ -50,6 +50,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
     if (arr[i] % 2 == 0)
     {
       newSize++;
+      return arr[newSize] = arr[i];
     }
   }
   return NULL;
