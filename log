@@ -89,3 +89,13 @@ exercises.c:53:28: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 bd7b2d9
+Thu 14 Mar 2024 02:14:33 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:18: error: array subscript is not an integer
+   53 |       return *arr[newSize] = arr[i];
+      |                  ^
+Compilation failed
+7bd5c9b
