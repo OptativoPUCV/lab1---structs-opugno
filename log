@@ -78,3 +78,14 @@ exercises.c:53:17: error: array subscript is not an integer
       |                 ^
 Compilation failed
 704afe7
+Thu 14 Mar 2024 02:14:04 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:53:28: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   53 |       return arr[*newSize] = arr[i];
+      |              ~~~~~~~~~~~~~~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bd7b2d9
