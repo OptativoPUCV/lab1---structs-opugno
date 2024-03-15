@@ -575,3 +575,53 @@ exercises.c:70:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 3e7a4a0
+Fri 15 Mar 2024 03:42:34 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:76:7: error: ‘result’ redeclared as different kind of symbol
+   76 |   int result = (int *) malloc((size1 + size2) * sizeof(int));
+      |       ^~~~~~
+exercises.c:71:28: note: previous definition of ‘result’ with type ‘int *’
+   71 |                        int result[])
+      |                        ~~~~^~~~~~~~
+exercises.c:76:16: error: initialization of ‘int’ from ‘int *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   76 |   int result = (int *) malloc((size1 + size2) * sizeof(int));
+      |                ^
+exercises.c:81:13: error: subscripted value is neither array nor pointer nor vector
+   81 |       result[sizeResult++] = arr1[i];
+      |             ^
+exercises.c:80:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   80 |     if (arr1[i] < arr2[j])
+      |     ^~
+exercises.c:82:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   82 |       i++;
+      |       ^
+exercises.c:83:5: error: ‘else’ without a previous ‘if’
+   83 |     else
+      |     ^~~~
+exercises.c:84:13: error: subscripted value is neither array nor pointer nor vector
+   84 |       result[sizeResult++] = arr2[j];
+      |             ^
+exercises.c:85:10: error: expected ‘;’ before ‘}’ token
+   85 |       j++
+      |          ^
+      |          ;
+   86 |   }
+      |   ~       
+exercises.c:90:11: error: subscripted value is neither array nor pointer nor vector
+   90 |     result[sizeResult++] = arr1[i++];
+      |           ^
+exercises.c:94:11: error: subscripted value is neither array nor pointer nor vector
+   94 |     result[sizeResult++] = arr2[j++];
+      |           ^
+exercises.c:97:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   97 |   return result;
+      |          ^~~~~~
+exercises.c:70:6: note: declared here
+   70 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
+      |      ^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3eabd65
