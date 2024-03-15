@@ -552,3 +552,26 @@ exercises.c:70:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 b5aeaee
+Fri 15 Mar 2024 03:41:47 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:76:8: error: ‘result’ redeclared as different kind of symbol
+   76 |   int *result = (int *) malloc((size1 + size2) * sizeof(int))
+      |        ^~~~~~
+exercises.c:71:28: note: previous definition of ‘result’ with type ‘int *’
+   71 |                        int result[])
+      |                        ~~~~^~~~~~~~
+exercises.c:78:3: error: expected ‘,’ or ‘;’ before ‘while’
+   78 |   while (i < size1 && j < size2)
+      |   ^~~~~
+exercises.c:97:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   97 |   return result;
+      |          ^~~~~~
+exercises.c:70:6: note: declared here
+   70 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
+      |      ^~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3e7a4a0
