@@ -710,3 +710,15 @@ Fri 15 Mar 2024 03:53:42 PM UTC:
  tests:  0|4
 total_score: 30/70
 0a2e94e
+Fri 15 Mar 2024 03:55:42 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:62:8: error: ‘newArr’ undeclared (first use in this function); did you mean ‘newArre’?
+   62 |   free(newArr);
+      |        ^~~~~~
+      |        newArre
+exercises.c:62:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+637f9d2
