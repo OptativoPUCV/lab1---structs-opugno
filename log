@@ -827,3 +827,14 @@ Sat 16 Mar 2024 08:20:48 PM UTC:
  1 file changed, 5 insertions(+), 5 deletions(-)
  tests:  0|0
 98289e1
+Sat 16 Mar 2024 08:42:36 PM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:80:7: error: ‘sizeResult’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   80 |   int sizeResult;
+      |       ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+300f738
