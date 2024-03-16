@@ -46,25 +46,20 @@ los números pares del arreglo original.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) 
 {
-  int *newArre = (int*) malloc(size * sizeof(int));
-  *newSize = 0;
-  if (newArre == NULL) return NULL;
+  int contador = 0;
   
   for (int i = 0; i < size; i++)
   {
     if (arr[i] % 2 == 0)
     {
-      newArre[*newSize] = arr[i];
-      (*newSize) ++;
+      contador++;
     }
   }
 
-  if (*newSize == 0)
-  {
-    free(newArre);
-    return NULL;
-  }
-  return newArre;
+  *newSize = contador;
+  int *newArre = (int*) malloc(*newSize * sizeof(int));
+
+  
 }
 
 /*
