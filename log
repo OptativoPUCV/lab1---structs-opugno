@@ -1073,3 +1073,21 @@ exercises.c:204:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 8e2b3e8
+Sat 16 Mar 2024 10:04:30 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:187:11: error: variable ‘inicioLista’ set but not used [-Werror=unused-but-set-variable]
+  187 |     Nodo *inicioLista  = NULL;
+      |           ^~~~~~~~~~~
+exercises.c:204:10: error: ‘inicioLista’ undeclared (first use in this function)
+  204 |   return inicioLista;
+      |          ^~~~~~~~~~~
+exercises.c:204:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:205:1: error: control reaches end of non-void function [-Werror=return-type]
+  205 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d7e101c
