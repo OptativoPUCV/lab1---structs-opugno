@@ -1002,3 +1002,20 @@ exercises.c:188:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 257e599
+Sat 16 Mar 2024 09:48:39 PM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:185:9: error: unused variable ‘finalLista’ [-Werror=unused-variable]
+  185 |   Nodo *finalLista = NULL;
+      |         ^~~~~~~~~~
+exercises.c:184:9: error: unused variable ‘inicioLista’ [-Werror=unused-variable]
+  184 |   Nodo *inicioLista  = NULL;
+      |         ^~~~~~~~~~~
+exercises.c:192:1: error: control reaches end of non-void function [-Werror=return-type]
+  192 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+202f1d9
