@@ -188,5 +188,7 @@ Nodo *crearListaEnlazada(int arr[], int size)
   {
     Nodo *newNodo = (Nodo*) malloc(sizeof(Nodo));
     newNodo -> numero = arr[i];
+    newNodo -> siguiente = NULL
+    
   }
 }
