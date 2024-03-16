@@ -181,5 +181,8 @@ typedef struct nodo {
 
 Nodo *crearListaEnlazada(int arr[], int size) 
 {
-  hola me llamo valetina
+  for (int i = 0; i < size; i++)
+  {
+    
+  }
 }
