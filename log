@@ -838,3 +838,9 @@ exercises.c:80:7: error: ‘sizeResult’ may be used uninitialized in this func
 cc1: all warnings being treated as errors
 Compilation failed
 300f738
+Sat 16 Mar 2024 08:43:01 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|3
+total_score: 40/70
+18c96f8
